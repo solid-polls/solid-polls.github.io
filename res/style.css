@@ -1,0 +1,73 @@
+html {
+    background-image: url("/img/markus-winkler-IrRbSND5EUc-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+}
+
+body {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    overflow: hidden;
+    color: white;
+    font-family: 'Montserrat';
+}
+
+#heading {
+    font-size: 5em;
+    margin: 0 0;
+
+}
+
+main {
+    text-shadow: rgba(0, 0, 0, 0.5) 0px 0px 15px;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 5em;
+    backdrop-filter: blur(10px) grayscale();
+    transition: 0.5s;
+    text-align: center;
+    border-radius: 8px;
+}
+
+main:hover {
+    backdrop-filter: none;
+}
+
+main span {
+    font-size: 2em;
+}
+
+.link-btn {
+    display: block;
+    border: 3px solid white;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 16px;
+    font-size: 1.5em;
+    transition: 0.5s;
+}
+
+.link-btn:visited, .link-btn:link {
+    color: white;
+    text-decoration: none;
+}
+
+.link-btn:hover {
+    transform: scale(1.05);
+    color: rgb(2, 145, 57);
+    background-color: white;
+}
+
+.link-btn.primary {
+    color: rgb(2, 145, 57);
+    background-color: white;
+}
+
+.link-btn.disabled:hover {
+    transform: none;
+    color: inherit;
+    background-color: transparent;
+}
